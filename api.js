@@ -30,7 +30,8 @@ app.post('/players',async(rec,res)=>{
 app.get('/players', async (req, res) => {
   const { data, error } = await supabase
     .from('players')
-    .select('*');
+    .select('*')
+    .order('score', { ascending: false }); 
 
   if (error) {
     return res.status(500).json(error);
