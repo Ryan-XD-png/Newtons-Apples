@@ -1,5 +1,5 @@
 async function loadPlayers() {
-  const res = await fetch("https://SEU-BACKEND.onrender.com/players");
+  const res = await fetch("https://newtons-apples.onrender.com/players");
   const players = await res.json();
 
   console.log(players);

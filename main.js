@@ -251,7 +251,7 @@ function game(){
 
 
 async function addPlayer(nome, pontos) {
-  await fetch("https://SEU-BACKEND.onrender.com/players", {
+  await fetch("https://newtons-apples.onrender.com/players", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
