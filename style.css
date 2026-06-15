@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-size: 10;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    gap:3%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(22, 0, 69);
+}
+header{
+    display: flex;
+    gap: 2rem;
+}
+h3 ,spam{
+
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+a{
+
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+canvas {
+    touch-action: none;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.modal {
+    display: none; /* escondido */
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.7);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo{
+    background-color: rgb(39, 39, 255);
+    width: 20rem;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 0.5rem;
+    border-radius: 2rem;
+    button{
+        border-radius: 0.4rem;
+        width: 20%;
+        height: 30%;
+        align-self: center;
+        background-color: rgb(39, 39, 255);
+        border: 1px solid ;
+        cursor: pointer;
+    }
+    input{
+        background-color: aliceblue;
+        border: 1px solid ;
+        height: 30%;
+        color: black;
+        padding-left: 1.2rem;
+    }
+}
+ul{
+   display: flex;
+   width: 31rem; 
+   height: 80%;
+   background-color: antiquewhite;
+   border-radius:0.5rem;
+   border:1rem solid rgb(46, 0, 0);
+   flex-direction: column;
+   overflow-y: scroll;
+}
