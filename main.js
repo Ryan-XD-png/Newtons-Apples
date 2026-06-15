@@ -68,7 +68,6 @@ window.addEventListener('keyup',(event)=>{
 })
 
 document.addEventListener("touchstart",(ev)=>{
-    e.preventDefault();
     const x = ev.touches[0].clientX;
     const y = ev.touches[0].clientY;
     if(x<window.innerWidth/2){
@@ -76,7 +75,7 @@ document.addEventListener("touchstart",(ev)=>{
     }else{
         teclado.direita=true;
     }
-},{ passive: false })
+})
 document.addEventListener("touchend",()=>{
 
         teclado.esquerda=false;
