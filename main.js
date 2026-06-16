@@ -149,11 +149,11 @@ let nome=null;
 let pontos = 0;
 
 function rapido() {
-    if (pontos >= 5000) return 200;
-    if (pontos >= 4000) return 400;
-    if (pontos >= 2000) return 700;
-    if (pontos >= 1000) return 1300;
-    return 2100;
+    if (pontos >= 5000) return 150;
+    if (pontos >= 4000) return 300;
+    if (pontos >= 2000) return 600;
+    if (pontos >= 1000) return 1000;
+    return 1200;
 }
 let id = setInterval(() => {
         macas.push(new Maca(ctx, canvas));
@@ -261,12 +261,15 @@ async function addPlayer(nome, pontos) {
     })
   });
 }
+
 document.getElementById("salvar").addEventListener("click", async() => {
+    document.getElementById("salvar").disabled = true;
     const nome = document.getElementById("nomeJogador").value;
 
-    console.log(nome); 
+    console.log(nome);
+    modal.style.display="none" 
     await addPlayer(nome, pontos);
-    modal.style.display="none"
+
     location.reload();
 });
 let imagensCarregadas = 0;
