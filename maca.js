@@ -4,10 +4,10 @@ class Maca{
         this.c = canvas;
         if (window.innerWidth<=550){
                 this.tamanho=this.c.width/10;
-                this.vel = 1.8;
+                this.vel = 3.3;
         }   else{
                this.tamanho=this.c.width/13;
-               this.vel = 3; 
+               this.vel = 4.5; 
         }   
         this.x =  Math.random() * (canvas.width - this.tamanho);
 

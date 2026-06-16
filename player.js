@@ -5,10 +5,10 @@ class Player{
         this.key = teclado;
         if (window.innerWidth<=550){
                 this.tamanho=this.c.width/6;
-                this.vel = 4;
+                this.vel = 5.5;
         }   else{
                this.tamanho=this.c.width/9;
-               this.vel = 7.5; 
+               this.vel = 8.5; 
         }
 
     
