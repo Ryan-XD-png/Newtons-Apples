@@ -45,7 +45,7 @@ setInterval(async () => {
     p_id: 1
   });
 
-}, 240000);
+}, 40000);
 
 
 app.listen(PORT, ()=>{
