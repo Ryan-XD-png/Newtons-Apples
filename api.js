@@ -40,6 +40,13 @@ app.get('/players', async (req, res) => {
   return res.json(data);
 });
 
+setInterval(async () => {
+  const { error } = await supabase.rpc('incrementar_save', {
+    p_id: 1
+  });
+
+}, 240000);
+
 
 app.listen(PORT, ()=>{
     console.log(`Rodando no http://localhost:${PORT}/players`)
